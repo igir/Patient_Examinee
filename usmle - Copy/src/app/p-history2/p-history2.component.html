@@ -1,0 +1,14 @@
+<textarea name="myText" id="myText" cols="44" rows="4" wrap="virtual"
+
+    style="font-family:arial; font-size:14px; line-height:17px; height:77px; overflow:auto;"
+
+    onKeyUp="checkLimits(txtArea,countChars,countLines)"
+
+    onPaste="checkLimits(myForm.myText,myForm.myChars,myForm.myLines)"
+
+    onCut="checkLimits(myForm.myText,myForm.myChars,myForm.myLines)"
+
+    onBlur="checkLimits(myForm.myText,myForm.myChars,myForm.myLines)">
+Text in the limited 
+textarea may never exceed the defined maximum number of rows and/or characters.
+</textarea>

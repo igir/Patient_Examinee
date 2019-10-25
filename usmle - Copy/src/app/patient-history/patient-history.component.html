@@ -1,0 +1,171 @@
+
+<div class="patient_form_head">
+    <header class="Patient_header"   >      
+    <!-- </header>[ngClass]="{'Patient_header1': scorllTop > 100  }"> -->
+        <p class="Examinee">Examinee Name:&nbsp;&nbsp;{{Patient.name}}</p>
+        <div class="page_change_box">
+            <div class="page_magnify_ico"></div>
+            <div class="page_inverse_ico"></div>
+          </div>
+        <table>
+          <tbody>
+            <tr>
+              <td>USMLE ID</td>
+              <td>{{Patient.USMLE_ID}}</td>
+              <td>Badge ID</td>
+              <td>{{Patient.Badge_ID}}</td>
+            </tr>
+            <tr>
+              <td>Room Number</td>
+              <td>{{Patient.Room_Number}}</td>
+              <td>	Encounter</td>
+              <td>{{Patient.Encounter}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p id="time">{{texts}}</p>
+      </header>
+
+ 
+    <form class="form-group patient_form_area">
+        <section>
+       
+        <label >
+            <strong>HISTORY:</strong>
+            Describe the history you just obtained from this patient. Include only information (pertinent positives and negatives) relevant to this patient's problem(s).
+        </label>
+        <textarea rows="7"  #mytxt [ngClass]="{'class': form-control-1}" name="myTextcommants" [(ngModel)]="myTextcommants" (ngChange) = "textchg($event)" cols="70" maxlength="950" wrap="virtual"></textarea>
+        <div class="processed" >
+         
+          <div>
+              <div class="processed_bar"></div>
+            <p><b>Lines:</b>{{Linecount}}/15</p><p><b>Characters:</b>{{myTextcommants.length}}/950</p></div>
+         
+        </div>
+     
+         
+          <label >
+              <strong>HISTORY:</strong>
+              Describe the history you just obtained from this patient. Include only information (pertinent positives and negatives) relevant to this patient's problem(s).
+          </label>
+          <textarea rows="7" cols="70"class="form-control-1 form_input" maxlength="950" wrap="virtual"></textarea>
+          <div class="processed" >
+         
+              <div>
+                  <div class="processed_bar"></div>
+                <p><b>Lines:</b>{{Linecount}}/15</p><p><b>Characters:</b>{{myTextcommants.length}}/950</p></div>
+             
+            </div>
+      
+            <label><strong>DIAGNOSTIC REASONING:</strong> <i>Based on what you have learned from the history and the physical examination,</i> list up to 3 diagnoses that might explain this patient's complaint(s). List your diagnoses from most to least likely. For some cases, fewer than 3 diagnoses will be appropriate. Then, enter the positive or negative findings from the history and the physical examination (if present) that support each diagnosis. Lastly, list initial <i>diagnostic</i> studies (if any) you would order for this patient (e.g. restricted physical exam maneuvers, laboratory tests, imaging, ECG, etc.)</label>
+            <div class="dialog_1">
+          <div>
+                <label for="di_input_of_1">Diagnosis #1</label>
+                <input class="form-control-1"type="text" maxlength="100" id="di_input_of_1"/>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <label for="di_input_of_1">History Finding(s)</label>
+                    <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                    <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                    <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                    <p id="di_input_of_12_add"></p>
+                </div>
+                <div class="col">
+                    <label for="di_input_of_2">Physical Exam Finding(s)</label>
+                    <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                    <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                    <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                    <p id="di_input_of_22_add"></p>
+                </div>
+                  
+              </div>
+            </div>
+            <div class="row row-1">
+                <a class="btn focus_row" (click)="focusnextrow()"></a>
+                <a class="btn add_row " (click)="addrow2()"></a>
+                                  
+              </div>
+            <!-- dialog 2 starts -->
+            <div class="dialog_1">
+                <div>
+                      <label for="di_input_of_1">Diagnosis #1</label>
+                      <input class="form-control-1"type="text" maxlength="100" id="di_input_of_1"/>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                          <label for="di_input_of_1">History Finding(s)</label>
+                          <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                          <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                          <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                          <p id="di_input_of_1_add"></p>
+                      </div>
+                      <div class="col">
+                          <label for="di_input_of_2">Physical Exam Finding(s)</label>
+                          <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                          <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                          <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                          <div id="di_input_of_2_add"></div>
+                      </div>
+                        
+                    </div>
+                  </div>
+                  <div class="row row-1">
+                    <a class="btn focus_row" (click)="focusnextrow()"></a>
+                    <a class="btn add_row " (click)="addrow()"></a>
+                                      
+                  </div>
+                  <!-- dialog 2 starts -->
+                  <div class="dialog_1">
+                      <div>
+                            <label for="di_input_of_1">Diagnosis #1</label>
+                            <input class="form-control-1"type="text" maxlength="100" id="di_input_of_1"/>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                                <label for="di_input_of_1">History Finding(s)</label>
+                                <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                                <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                                <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                                <p id="di_input_of_11_add"></p>
+                            </div>
+                            <div class="col">
+                                <label for="di_input_of_2">Physical Exam Finding(s)</label>
+                                <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                                <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                                <input type="text"class="form-control-1  " maxlength="100" id="di_input_of_2"/>
+                                <p id="di_input_of_21_add"></p>
+                            </div>
+                              
+                          </div>
+                        </div>
+                        <div class="row row-1">
+                            <a class="btn focus_row" (click)="focusnextrow()"></a>
+                            <a class="btn add_row " (click)="addrow1()"></a>
+                                              
+                          </div>
+                        <!-- dialog 3 starts -->
+                        <div class=" dialog_3 ">
+                            <div class="col">
+                                <label for="di_input_of_1">History Finding(s)</label>
+                                <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                                <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                                <input type="text"class="form-control-1 " maxlength="100" id="di_input_of_1"/>
+                                <p id="di_input_of_3_add"></p>
+                            </div>
+                            <a class="btn add_row " (click)="addrow3()"></a>
+                            </div>
+
+     
+                          </section> 
+                          <div class="text-center button-area ">
+                              <a class="btn add_submit "></a>
+                          </div> 
+                          
+                          <!-- <a [router-link]="/" (click)="addrow()"></a> -->
+       <!-- <a class="btn add_submit " [routerLink]="[ '/dashboard', routeParam ]"></a> -->
+    </form>
+  
+</div>
+ 

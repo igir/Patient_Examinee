@@ -1,0 +1,46 @@
+<section class="main_component">
+<!-- <div class="col-md-9 col-lg-12 col-xs-3 col- col-sm-4 col-sm-6 hole_content"> -->
+
+  <nav class="main_navigation ">
+    <ul class="nav nav-tabs fixed " routerLinkActive="active">
+      <!-- <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" (click)="show=!show">Patient Note</a> -->
+      <li class="nav-item"><a routerLink="/Patient Note" class="nav-link active" role="tab" >Patient Note</a></li>
+      <li class="nav-item"><a routerLink="/Examinee Instructions" class="nav-link">Examinee Instructions</a></li>
+      <li class="nav-item"><a routerLink="/dashboard" class="nav-link">Dashboard</a></li>
+      <!-- <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Examinee Instructions</a> -->
+      </ul>
+  </nav>
+  <form class="Patient_form">
+
+        <section class="examinee_note">
+            <router-outlet></router-outlet>
+          
+            </section>
+  </form>
+  <!-- 
+  -->
+
+
+<!-- <app-messages></app-messages> -->
+<!-- <section id="nav-home">
+  <div class="History_area">
+      <app-patient-history></app-patient-history>
+  </div>
+  <div class="History_area">
+      <textarea class="txtBig text defaultColor" (click)="onChange()"  id="txtComments" name="txtComments" cols="70" rows="7" maxrows="15" maxchars="950" wrap="virtual" spellcheck="false" ></textarea>
+      <div id="progresscontain"><div id="txtComments_progressbar" style=" width: 0%;"></div>
+    </div>
+    <div id="count2" class="text">&nbsp;&nbsp;&nbsp;<b>Lines:</b><input name="txtComments_Lines" id="txtComments_Lines" type="text" class="defaultColor" style="text-align:center; border-width:0px; width:36px;" value="0" size="1" maxlength="4" readonly="readonly">/<input name="txtComments_maxLines" id="txtComments_maxLines" type="text" class="defaultColor" style="text-align:center; border-width:0px; width:28px;" value="0" size="1" maxlength="3" readonly="readonly">  <b>Characters:</b><input name="txtComments_Chars" id="txtComments_Chars" type="text" class="defaultColor" style="text-align:center; border-width:0px; width:36px;" value="0" size="1" maxlength="4" readonly="readonly">/<input name="txtComments_maxChars" id="txtComments_maxChars" type="text" class="defaultColor" style="text-align:center; border-width:0px; width:36px;" value="0" size="1" readonly="readonly"></div>
+  </div>
+  
+</section>
+ </div> -->
+<!-- <section id="nav-profile"class=" examinee_note">
+ 
+  <app-examinee-note ></app-examinee-note>
+
+</section> - -->
+</section>
+
+
+

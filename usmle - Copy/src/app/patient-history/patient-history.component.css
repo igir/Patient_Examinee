@@ -1,0 +1,289 @@
+textarea.ng-invalid {
+    background-color: pink;
+}
+/* textarea.ng-touched {
+    background-color:blueviolet;
+} */
+textarea{
+    /* overflow:hidden; */
+    resize: none;
+    /* width:90%; */
+}
+.patient_form_area{
+    /* width:80% !important; */
+    overflow-x: hidden;
+    margin-bottom:12px;
+    /* height: 80%; */
+    overflow-y: scroll;
+   scroll-behavior: auto;
+max-height:512px;
+}
+.form_input{
+    width:90% !important;
+}
+.patient_form_area label{
+    /* width:80% !important; */
+    font-size: 0.96em;
+    display: inline-block;
+    /* line-height: 0px; */
+    /* margin-top: .5rem; */
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+.patient_form_area label::before{
+    content:" ";
+    
+    font-family: Courier New;
+    font-size: 12pt;
+    margin-bottom: 0;
+    visibility: hidden;
+    
+}
+.dialog_1{
+    margin-top:4px;
+    border:2px solid #458CB1;
+    width:90%;
+    padding: 5px;
+}
+.dialog_3{
+    margin-top:15px;
+    border:2px solid #458CB1;
+    width:50%;
+    padding: 5px;
+}
+input{
+    width:100% !important;
+    display:block;
+}
+.row{
+    margin:0px;
+
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.add_row{
+    background-image: url(/assets/pics/addrow.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    margin: 2px 2px 2px 2px;
+    
+    
+}
+.add_submit{
+    background-image: url(/assets/pics/submit.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 38px;
+    width: 120px;
+}
+textarea .form-control{
+    height:auto;
+    /* height: calc(1.5em + .75rem + 2px); */
+    /* padding: .375rem .75rem; */
+    /* font-size: 1rem; */
+padding:none !important;
+font-size:1em !important;
+    /* background-color: #fff; */
+    /* background-clip: padding-box; */
+background-color: none !important;
+background-clip: unset !important;
+border-radius: unset !important;
+transition:unset !important;
+    /* border-radius: .25rem; */
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+}
+.processed div{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+.processed_bar{
+    width:62%;
+    height: 8px;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CCC;
+}
+.processed{
+    display: inline-block;
+ 
+    width: 90%;
+}
+#di_input_of_1_add{
+    width:100%;
+    /* display:inline-block; */
+    padding:0px;
+}
+#id_input_of_1{
+    width: 100%;
+}
+
+.form-control-11{
+    display: block;
+    width: 100% !important;
+    /* height: calc(1.5em + .75rem + 2px); */
+    /* padding: .375rem .75rem; */
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    /* background-color: #fff; */
+    /* background-clip: padding-box; */
+    border: 1px solid #A9A9A9;
+    /* border-radius: .25rem; */
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/  
+}
+.button-area{
+    margin-top:10px;
+}
+.focus_row{
+    background: url(/assets/pics/buttondown.png) 50% 50% no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 42px;
+    width: 42px;
+    margin: 2px 2px 2px 2px;
+}
+.add_row:focus{
+    border:2px solid #458CB1;
+
+}
+.form-control-1{
+    display: block;
+    width: 100%;
+    /* height: calc(1.5em + .75rem + 2px); */
+    /* padding: .375rem .75rem; */
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    /* background-color: #fff; */
+    /* background-clip: padding-box; */
+    border: 1px solid #A9A9A9;
+    /* border-radius: .25rem; */
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+}
+.dialog_1 label{
+    font-size: 0.96em;
+    display: inline-block;
+    line-height: 0px;
+    margin-bottom: 0;
+
+}
+
+textarea{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    resize: none;
+    width: 90%;
+    Background-color: #F0EEEE;
+    color: Black;
+}
+#ta {
+    width: 90%;
+    line-height: 16px;
+    text-overflow: "----"; 
+    overflow:auto;
+    resize: none;
+    height:auto;
+
+}
+.Patient_header1{
+    position:fixed;
+
+}
+
+.Patient_header{
+    font-size: 11px;
+    background-color: #000099;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-inline-start: 4px;
+}
+.Examinee{
+    text-align: center;
+    margin: 5px 0px;
+}
+#time{
+    text-align: right;
+    padding-bottom: 4px;;
+}
+.page_change_box{
+
+position: absolute;
+top: 53px;
+    width: 100%;
+    right: 0px;
+}
+.page_inverse_ico{
+    background: url(/assets/images/invert.ico) 50% 50% no-repeat;
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    position: absolute;
+    right: 21px;
+    top: -13px;
+    padding: 0 0 0 0;
+}
+.page_magnify_ico{
+    background: url(/assets/images/magnify.ico) 50% 50% no-repeat;
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    position: absolute;
+    right: 21px;
+    top: -52px;
+    padding: 0 0 0 0;
+}
+.patient_form_head{
+    position: relative;
+       
+   
+    
+}
+table{
+    width: 100%;
+    padding:1px;
+    padding-top: 5px;
+    font-size: 11px;
+
+}
+
+td{
+    width:20%;
+    font-size: 1.1em;
+    padding:4px;
+
+}
+td,tr{
+    padding:4px;
+}
+/* .patient_form_area{
+    width:800px;
+    
+
+    overflow:scroll;
+    scroll-behavior: auto;
+
+} */
+

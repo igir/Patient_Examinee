@@ -1,0 +1,31 @@
+.bg-primary{
+    background-color: #0E0099 !important;
+    color:white;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+}
+.exa_content{
+    margin:0;
+    display: block;
+    border-width: 1px;
+    border-color: #d3d3d3;
+     /* padding: 1em ;  */
+    background: none;
+    box-sizing: content-box;
+}
+/* .vital_sign{
+    font-size:1em;
+    margin: 14px 0;
+    white-space:pre;
+    line-break: loose;
+} */
+p{
+    font-size:1em;
+    margin: 14px 0;
+
+}
+ol{
+    margin: 14px 0;
+    padding-inline-start: 40px;
+}

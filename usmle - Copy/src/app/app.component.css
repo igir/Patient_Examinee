@@ -1,0 +1,124 @@
+
+/* @media screen and (max-width:768px) and (max-width:1024) */
+/* @media (min-width: 576px) and (min-width: 768px) {
+    .hole_content{
+        width:100%;
+        /* display:block; */
+    /* }
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+} */
+
+
+/* .container-fluid{
+    /* margin-top: 50px;
+    position: relative; 
+
+} */
+
+.main_navigation{
+    background: #eae6e6 ;
+    padding: .2em .2em 0;
+    background-image: url(../assets/images/ui-bg_flat_100_eae6e6_40x100.png);
+    background-position: 50% 50% ;
+    background-repeat: repeat-x;
+
+}
+.fixed-top{
+    width: 90%;
+    padding-left:10px ;
+    margin-left:25px;
+}
+
+
+/* #nav-home{
+    padding-top: 4px;
+    margin-top: 170px;
+} */
+li a{
+    text-decoration: none;
+    padding: .5em 1em;
+    color: #555555;
+}
+.nav-link:hover {
+    
+    background-color: #a7a0a0;
+}
+.nav-link.active:enabled{
+    background-color: none;
+}
+.nav-link:active {
+    color: #131111;
+    background-color:#d3d3d3;
+}
+.nav-link:focus {
+    
+    background-color: #fff;
+}
+.Patient_form{
+    border-color:#d3d3d3;
+    border:1px;
+    font-family:  Arial, Helvetica, sans-serif ; 
+
+}
+    
+
+/* header{
+    margin-bottom:15px;
+} */
+/* .History_area{
+    margin:0  auto;
+    /* padding-left: 15px; */
+    /* margin-top:10px; */
+    
+/* } */
+.main_component{
+    font-family: Tahoma, Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    border: 1px solid #EAE6E6;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    background-color: none;
+    z-index: 10;  
+}
+.nav-tabs{
+border-bottom: 1px;
+}
+.nav-link,.nav-link.active{
+    border-color:#AAAAAA;
+}
+/* .main_navigation:before{
+    content:"";
+    display:table;
+}
+.main_navigation::after{
+    content:"";
+    display:table;
+} */
+ul li {
+    list-style-type: none;
+    display:inline-block;
+}
+
+.examinee_note{
+    padding:1em;
+    box-sizing: unset;
+    display: block;
+    border-width: 1px;
+    border-color: #d3d3d3;
+    padding: 1em 1.4em;
+    /* background: none; */
+    border:#d3d3d3;
+    font-size: 1em;
+}
+
